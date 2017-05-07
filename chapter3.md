@@ -1,8 +1,8 @@
 ---
 title       : Chapter 3
-description : Lists
+description : Data Manipulation
 
---- type:NormalExercise xp:100 skills:1 key:8156a925e3
+--- type:NormalExercise xp:100 skills:1 key:169d8c0fe2
 
 
 *** =instructions

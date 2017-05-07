@@ -1,8 +1,8 @@
 ---
 title       : Chapter 2
-description : Vectors
+description : Matrices
   
---- type:NormalExercise xp:100 skills:1 key:960f76760f
+--- type:NormalExercise xp:100 skills:1 key:db082273b2
 
 
 *** =instructions
