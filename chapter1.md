@@ -5,8 +5,7 @@ description : Data Frames
 --- type:NormalExercise xp:50 skills:1 key:3c1cd8a7c3
 ## Data frame definition
 
-(Slides Day 2)[cl.indiana.edu/~obscrivn/docs/DavisBoot2.pptx]
-(Code Day 2)[http://cl.indiana.edu/~obscrivn/docs/DavisBoot2.R]
+
 * **Data frame** stores data tables
 * It contains vectors of equal length
 * ` data.frame() ` is a function to create a data frame
