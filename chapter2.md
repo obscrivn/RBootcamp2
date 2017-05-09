@@ -63,7 +63,7 @@ mydata["cyl" == 4]
 ```{r}
 test_object("mydata", incorrect_msg = "Try again")
 test_output_contains("summary(mydata)", incorrect_msg = "Try again")
-test_output_contains("mydata["cyl" > 4]", incorrect_msg = "remember the correct column name and use a greater sign")
-test_output_contains("mydata["cyl" == 4]", incorrect_msg = "remember the correct column name and use equal sign")
+test_output_contains("mydata[\"cyl\" > 4]", incorrect_msg = "remember the correct column name and use a greater sign")
+test_output_contains("mydata[\"cyl\" == 4]", incorrect_msg = "remember the correct column name and use equal sign")
 success_msg("Awesome!")
 ```
