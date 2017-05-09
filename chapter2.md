@@ -42,7 +42,7 @@ mydata <- mtcars[]
 # cylinders greater than 4
 
 
-# cylinders equal 4
+# cyl is greater than 4 and disp is less than 400
 
 ```
 
