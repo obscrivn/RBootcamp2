@@ -78,3 +78,25 @@ test_output_contains("mydata[cyl > 4,]", incorrect_msg = "remember the correct c
 test_output_contains("mydata[(cyl > 4 & disp < 400),]", incorrect_msg = "remember the correct column name and use amper sign")
 success_msg("Awesome!")
 ```
+--- type:MultipleChoiceExercise xp:50 skills:1 key:0241f5bcf0
+
+## Data Manipulation Quiz
+What do the following three command execute? **faithful** is a dataframe
+
+1. faithful2 <- faithful[seq(1,3), ]
+2. faithful2 <- faithful[1:3, ]
+3. faithful2 <- head(faithful,3)
+
+*** =instructions
+- extract three columns
+- create a numeric vector of 1,2,3
+- extract three row 
+
+
+*** =sct
+```{r}
+msg1 = "Try again"
+msg2 = "Try again"
+msg3 = "Well done"
+test_mc(correct = 3, feedback_msgs = c(msg1,msg2,msg3))
+```

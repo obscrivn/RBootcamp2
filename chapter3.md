@@ -1,6 +1,6 @@
 ---
 title       : Chapter 3
-description : Data Manipulation
+description : Manipulating
 
 --- type:NormalExercise xp:100 skills:1 key:169d8c0fe2
 
