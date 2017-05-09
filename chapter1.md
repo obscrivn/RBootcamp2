@@ -109,11 +109,11 @@ cell <-
 # Load dataset
 mydata <- data(mtcars)
 
-# Extract the first 6 rows
+# The value of cell in the row 3 and column 2
 cell <- 4
 
 # Extract the last 6 rows
-mydata[3, 2]
+#mydata[3, 2]
 
 #Extract the entire 1st row
 #mydata[1,]
@@ -128,7 +128,7 @@ mydata[3, 2]
 *** =sct
 ```{r}
 test_object("cell", incorrect_msg = "try again")
-test_output_contains("mydata[3, 2]", incorrect_msg = "try again")
+#test_output_contains("mydata[3, 2]", incorrect_msg = "try again")
 #test_output_contains("mydata[1,]", incorrect_msg = "try again")
 #test_output_contains("mydata[,2]", incorrect_msg = "try again")
 #test_output_contains("mydata[2,3]", incorrect_msg = "try again")
