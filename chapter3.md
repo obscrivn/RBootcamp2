@@ -69,10 +69,10 @@ head(movie.data2)
 
 *** =sct
 ```{r}
-test_object("movie.data", incorrect_msg = "Try again")
-test_output_contains("summary(movie.data)", incorrect_msg = "Try again")
-test_output_contains("attach(movie.data)", incorrect_msg = "Try again")
-test_object("movie.data2", incorrect_msg = "Try again")
-test_output_contains("head(movie.data2)", incorrect_msg = "Try again")
+test_object("movie.data", incorrect_msg = "Try again1")
+test_output_contains("summary(movie.data)", incorrect_msg = "Try again2")
+test_output_contains("attach(movie.data)", incorrect_msg = "Try again3")
+test_object("movie.data2", incorrect_msg = "Try again4")
+test_output_contains("head(movie.data2)", incorrect_msg = "Try again5")
 success_msg("Great! You are done! Feel free to work on your own data!")
 ```
