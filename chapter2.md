@@ -47,7 +47,7 @@ mydata <- mtcars[]
 ```{r}
 data(mtcars)
 # Fill in the coordinates (colnames) inside the brackets
-mydata <- mtcars[]
+mydata <- mtcars["cyl", "disp"]
 
 #summary
 summary(mydata)
