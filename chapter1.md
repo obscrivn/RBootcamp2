@@ -141,17 +141,23 @@ test_output_contains("mtcars[,\"mpg\"]", incorrect_msg = "try again")
 success_msg("Great!")
 ```
 --- type:MultipleChoiceExercise xp:50 skills:1 key:14288e1b24
+Select the correct answer to represent the following tasks:
+1. calculate the first 6 row
+2. calculate the number of columns
+3. extract the names of the columns
+4. calculate the number of rows
 
+If you are unfamiliar with some functions, please use ` ?help ` in the console to learn about the function (ex. ` ?length `)
 *** =instructions
-#- logical
-#- character
-#- numeric
+#- head(mydata), nrow(mydata), colnames(mydata), ncol(mydata)
+#- head(mydata), ncol(mydata), nrow(mydata), colnames(mydata)
+#- head(mydata), ncol(mydata), colnames(mydata), nrow(mydata) 
 
 
 *** =sct
 ```{r}
-#msg1 = "Try again! Think about quotes"
-#msg2 = "Well done. Proceed to the next exercise"
-#msg3 = "Try again! Think about quotes"
-#test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3))
+msg1 = "Try again"
+msg2 = "Try again"
+msg3 = "Well done"
+test_mc(correct = 3, feedback_msgs = c(msg1,msg2,msg3))
 ```
