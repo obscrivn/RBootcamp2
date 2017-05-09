@@ -11,8 +11,10 @@ description : Data Frames
 
 *** =instructions
 -In the code, you have an example how to create a data frame with two columns
+
 -Add another vector with the values **5,6,7**
--Create a data frame with d1, d2 and d3.
+
+-Create a data frame with **d1**, **d2** and **d3**.
 
 
 *** =hint
