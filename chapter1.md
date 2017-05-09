@@ -115,13 +115,13 @@ head(mydata)
 tail(mydata)
 
 #Extract the entire 1st row
-mydata[1,]
+#mydata[1,]
 
 # Extract the entire 2nd column
-mydata[,2]
+#mydata[,2]
 
 # Extract cell from row 2 and column 3
-mydata[2,2]
+#mydata[2,2]
 ```
 
 *** =sct
