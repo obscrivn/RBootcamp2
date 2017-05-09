@@ -53,8 +53,8 @@ dataframe2 <- data.frame(d1,d2,d3)
 
 *** =sct
 ```{r}
-test_object(("d3", incorrect_msg = "Make sure you use c()")
-test_object(("dataframe2", incorrect_msg = "Make sure you use data.frame")
+test_object("d3", incorrect_msg = "Make sure you use c()")
+test_object("dataframe2", incorrect_msg = "Make sure you use data.frame")
 success_msg("Great!")
 ```
 
