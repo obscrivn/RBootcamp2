@@ -61,7 +61,7 @@ summary(movie.data)
 attach(movie.data)
 
 #Create a dataframe from movie.data with only movies with budgets over $30,000,000
-movie.data2 <- movie.data[budget>30000000, ]
+movie.data2 <- movie.data[budget > 30000000, ]
 
 # Examine the first 6 rows of movie.data2
 head(movie.data2)
