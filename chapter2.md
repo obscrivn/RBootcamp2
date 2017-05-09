@@ -10,10 +10,11 @@ description : Data Frame Modification
 - Review operators here if needed [operators list](http://www.statmethods.net/management/operators.html)
 - You can specify a condition for a column value
 - Example ` mydata["Age" < 55] `
-*** =instructions
--Find the column names of your data set **mtcars**
--Create a new data frame **mydata** by retrieving two columns **cyl** **disp**. Since you are extracting two columns, you need to use a vector (for more help - review this page [column slicing](http://www.r-tutor.com/r-introduction/data-frame/data-frame-column-slice)
 
+*** =instructions
+
+- Find the column names of your data set **mtcars**
+- Create a new data frame **mydata** by retrieving two columns **cyl** **disp**. Since you are extracting two columns, you need to use a vector (for more help - review this page [column slicing](http://www.r-tutor.com/r-introduction/data-frame/data-frame-column-slice)
 - Use help function to learn about ` summary() ` (remember to use question mark)
 - Apply this function to **mydata**
 - Retrieve only cylinders that are greater than 4
