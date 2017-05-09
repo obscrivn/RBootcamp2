@@ -83,14 +83,14 @@ success_msg("Awesome!")
 ## Data Manipulation Quiz
 What do the following three command execute? **faithful** is a dataframe
 
-1. faithful2 <- faithful[seq(1,3), ]
-2. faithful2 <- faithful[1:3, ]
-3. faithful2 <- head(faithful,3)
+1. ` faithful2 <- faithful[seq(1,3), ] `
+2. ` faithful2 <- faithful[1:3, ] `
+3. ` faithful2 <- head(faithful,3) `
 
 *** =instructions
 - extract three columns
 - create a numeric vector of 1,2,3
-- extract three row 
+- extract three rows 
 
 
 *** =sct

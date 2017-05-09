@@ -1,12 +1,19 @@
 ---
 title       : Chapter 3
-description : Manipulating
-
+description : Importing Data
 --- type:NormalExercise xp:100 skills:1 key:169d8c0fe2
 
+- Function ` read.csv() ` import csv format files
+- Read about this function using help menu
+- By default the header is true, so you do not have to specify it
+- You can import your file as a local file or url
+- 
 
 *** =instructions
-
+-You will import the csv file from the url
+- Run summary of the dataset movie_metadata
+- Attach the data frame
+- Create a dataframe with movie budget over $30,000,000
 
 *** =hint
 
@@ -19,14 +26,49 @@ description : Manipulating
 *** =sample_code
 ```{r}
 
+#http://cl.indiana.edu/~obscrivn/docs/movie_metadata.csv
+#Store this variable as a dataframe in R called movie.data
+movie.data <- 
+
+# Look at the summary of the dataframe
+
+
+# Attach this dataframe
+
+
+#Create a dataframe from movie.data with only movies with budgets over $30,000,000
+movie.data2 <- 
+
+#Using the forward pipe operator (%>%) create a dataframe from movie.data that measure the budget in
+# millions of dollars and takes the first thirty entries.
+
+
 ```
 
 *** =solution
 ```{r}
+#http://cl.indiana.edu/~obscrivn/docs/movie_metadata.csv
+#Store this variable as a dataframe in R called movie.data
+
+movie.data <-
+   read.csv("http://cl.indiana.edu/~obscrivn/docs/movie_metadata.csv")
+
+# Look at the summary of the dataframe  
+summary(movie.data)
+
+#attach this dataframe
+attach(movie.data)
+
+#Create a dataframe from movie.data with only movies with budgets over $30,000,000
+movie.data2 <- movie.data[budget>30000000, ]
 
 ```
 
 *** =sct
 ```{r}
-success_msg("Awesome!")
+test_object("movie.data", incorrect_msg = "Try again")
+test_output_contains("summary(movie.data)", incorrect_msg = "Try again")
+test_output_contains("attach(movie.data)", incorrect_msg = "Try again")
+test_object("movie.data2", incorrect_msg = "Try again")
+success_msg("Great! You are done! Feel free to work on your own data!")
 ```
