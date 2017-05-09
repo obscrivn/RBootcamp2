@@ -144,6 +144,7 @@ success_msg("Great!")
 
 ## Useful Data Frame Functions Quiz
 Select the correct answer to represent the following tasks:
+
 1. calculate the first 6 row
 2. calculate the number of columns
 3. extract the names of the columns
