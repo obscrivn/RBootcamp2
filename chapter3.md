@@ -27,8 +27,7 @@ description : Importing Data
 
 *** =sample_code
 ```{r}
-
-#http://cl.indiana.edu/~obscrivn/docs/movie_metadata.csv
+#This is your url http://cl.indiana.edu/~obscrivn/docs/movie_metadata.csv
 #Store this variable as a dataframe in R called movie.data
 movie.data <- 
 
@@ -48,7 +47,7 @@ movie.data2 <-
 
 *** =solution
 ```{r}
-#http://cl.indiana.edu/~obscrivn/docs/movie_metadata.csv
+#This is your url http://cl.indiana.edu/~obscrivn/docs/movie_metadata.csv
 #Store this variable as a dataframe in R called movie.data
 
 movie.data <-
@@ -74,5 +73,6 @@ test_object("movie.data", incorrect_msg = "Try again")
 test_output_contains("summary(movie.data)", incorrect_msg = "Try again")
 test_output_contains("attach(movie.data)", incorrect_msg = "Try again")
 test_object("movie.data2", incorrect_msg = "Try again")
+test_output_contains("head(movie.data2)", incorrect_msg = "Try again")
 success_msg("Great! You are done! Feel free to work on your own data!")
 ```
