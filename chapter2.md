@@ -8,9 +8,10 @@ description : Data Frame Modification
 - Logical operators are useful to retrieve data based on a condition
 - Operators are ` > `, ` <= `, ` >= `
 - Review operators here if needed [operators list](http://www.statmethods.net/management/operators.html)
-- You can specify a condition for a column value using ` which() `
-- Example ` mydata[ which("Age" < 55), ] `
-- Notice the specific syntax of ` which `
+- You can specify a condition for a column value
+- Example: ` mydata["Age" < 55, ] ` or ` mydata[mydata$Age < 55, ] `
+- ` & ` means AND
+- Example ` mydata[("Age" < 55 & "Gender" == "F"),] `
 
 *** =instructions
 
@@ -19,9 +20,9 @@ description : Data Frame Modification
 - Use help function in the console to learn about ` summary() ` (remember to use question mark)
 - Apply this function to **mydata**
 - Examine the use of ` attach() ` function in the console help menu
-- We are going to use attach so that we can simply type the names of columns
+- We are going to use ` attach ` so that we can simply type the names of columns
 - Retrieve only cylinders that are greater than 4
-- Retrieve cylinders that are greater than 4 and disp is less than 400 (use ` & ` operator inside ` which() `)
+- Retrieve cyl that are greater than 4 **and** disp is less than 400 (use ` & ` for **and**)
 
 *** =hint
 the column name is "cyl"
@@ -43,7 +44,7 @@ mydata <- mtcars[]
 # attaching data
 attach(mydata)
 
-# cylinders greater than 4
+# cylinders are greater than 4
 
 
 # cyl is greater than 4 and disp is less than 400
@@ -62,11 +63,11 @@ summary(mydata)
 # attaching data
 attach(mydata)
 
-# cylinders greater than 4
-mydata[which("cyl">4),]
+# cylinders are greater than 4
+mydata[cyl > 4,]
 
 # cyl is greater than 4 and disp is less than 400 
-mydata[which("cyl">4 & "disp" < 400),]
+mydata[(cyl > 4 & disp < 400),]
 ```
 
 *** =sct
@@ -74,6 +75,6 @@ mydata[which("cyl">4 & "disp" < 400),]
 test_object("mydata", incorrect_msg = "Try again")
 test_output_contains("summary(mydata)", incorrect_msg = "Try again")
 test_output_contains("mydata[\"cyl\" > 4]", incorrect_msg = "remember the correct column name and use a greater sign")
-test_output_contains("mydata[which(\"cyl\">4 & \"disp\" < 400),]", incorrect_msg = "remember the correct column name and use amper sign")
+test_output_contains("mydata[(cyl > 4 & disp < 400),]", incorrect_msg = "remember the correct column name and use amper sign")
 success_msg("Awesome!")
 ```
