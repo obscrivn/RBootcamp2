@@ -151,9 +151,9 @@ Select the correct answer to represent the following tasks:
 
 If you are unfamiliar with some functions, please use ` ?help ` in the console to learn about the function (ex. ` ?length `)
 *** =instructions
-#- head(mydata), nrow(mydata), colnames(mydata), ncol(mydata)
-#- head(mydata), ncol(mydata), nrow(mydata), colnames(mydata)
-#- head(mydata), ncol(mydata), colnames(mydata), nrow(mydata) 
+- head(mydata), nrow(mydata), colnames(mydata), ncol(mydata)
+- head(mydata), ncol(mydata), nrow(mydata), colnames(mydata)
+- head(mydata), ncol(mydata), colnames(mydata), nrow(mydata) 
 
 
 *** =sct
