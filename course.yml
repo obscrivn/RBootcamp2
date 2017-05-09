@@ -7,6 +7,6 @@ instructors:
    - obscrivn@indiana.edu
    -  majdavis@iu.edu
 description: This is the second day of the RBootcamp. In this session, you will master data manipulation. Make sure you study the lecture and then dive into these hands-on activities using DataCamp. 
-     (Slides Day 2)[cl.indiana.edu/~obscrivn/docs/DavisBoot2.pptx]
-      (Code Day 2)[http://cl.indiana.edu/~obscrivn/docs/DavisBoot2.R]
+     Slides Day 2: cl.indiana.edu/~obscrivn/docs/DavisBoot2.pptx
+      Code Day 2: http://cl.indiana.edu/~obscrivn/docs/DavisBoot2.R
 #from: "r-base-prod:19"
