@@ -2,7 +2,7 @@
 title       : Chapter 2
 description : Data Frame Modification
   
---- type:NormalExercise xp:100 skills:1 key:db082273b2
+--- type:NormalExercise xp:200 skills:1 key:db082273b2
 ## Manipulating Data Frame
 
 - Logical operators are useful to retrieve data based on a condition
@@ -18,6 +18,8 @@ description : Data Frame Modification
 - Create a new data frame **mydata** by retrieving two columns **cyl** **disp**. Since you are extracting two columns, you need to use a vector (for more help - review this page [column slicing](http://www.r-tutor.com/r-introduction/data-frame/data-frame-column-slice)
 - Use help function in the console to learn about ` summary() ` (remember to use question mark)
 - Apply this function to **mydata**
+- Examine the use of ` attach() ` function in the console help menu
+- We are going to use attach so that we can simply type the names of columns
 - Retrieve only cylinders that are greater than 4
 - Retrieve cylinders that are greater than 4 and disp is less than 400 (use ` & ` operator inside ` which() `)
 
@@ -38,6 +40,8 @@ mydata <- mtcars[]
 
 #summary
 
+# attaching data
+attach(mydata)
 
 # cylinders greater than 4
 
@@ -54,6 +58,9 @@ mydata <- mtcars[, c("cyl", "disp")]
 
 #summary
 summary(mydata)
+
+# attaching data
+attach(mydata)
 
 # cylinders greater than 4
 mydata[which("cyl">4),]
