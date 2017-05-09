@@ -59,7 +59,80 @@ test_object("d3", incorrect_msg = "Make sure you use c()")
 test_object("dataframe2", incorrect_msg = "Make sure you use data.frame")
 success_msg("Great!")
 ```
+--- type:NormalExercise xp:150 skills:1 key:d4d5230313
+## Row and Columns
+- To retrieve data from the rows and columns, you need to use `[ ]`
+- ` [1,2] ` has two coordinates: the first is a **row**, the second is a **column**
+- ` [1,] ` for the entire row, the second coordinate is empty
+- ` [, 1] ` for the entire column, the first coordinate is empty
+ 
+*** =instructions
+- You have a dataset **mtcars** (data(mtcars) function import the built-in data)
+- Use ` head() ` function to access the first 6 rows
+- Use ` tail() ` function to access to last 6 rows
+- Extract the entire first row (remember to use ` [ ] `)
+- Extract the entire second column
+- Extract the cell from the second row and third column
 
+*** =hint
+
+
+*** =pre_exercise_code
+```{r}
+# no pec
+```
+
+*** =sample_code
+```{r}
+# Load dataset
+mydata <- data(mtcars)
+
+# Extract the first 6 rows
+
+
+# Extract the last 6 rows
+
+
+#Extract the entire 1st row
+
+
+# Extract the entire 2nd column
+
+
+# Extract cell from row 2 and column 3
+
+
+```
+*** =solution
+```{r}
+# Load dataset
+mydata <- data(mtcars)
+
+# Extract the first 6 rows
+head(mydata)
+
+# Extract the last 6 rows
+tail(mydata)
+
+#Extract the entire 1st row
+mydata[1,]
+
+# Extract the entire 2nd column
+mydata[,2]
+
+# Extract cell from row 2 and column 3
+mydata[2,3]
+```
+
+*** =sct
+```{r}
+test_output_contains("head(mydata)", incorrect_msg = "try again")
+test_output_contains("tail(mydata)", incorrect_msg = "try again")
+test_output_contains("mydata[1,]", incorrect_msg = "try again")
+test_output_contains("mydata[,2]", incorrect_msg = "try again")
+test_output_contains("mydata[2,3]", incorrect_msg = "try again")
+success_msg("Great!")
+```
 --- type:MultipleChoiceExercise xp:50 skills:1 key:14288e1b24
 
 *** =instructions
