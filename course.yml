@@ -6,5 +6,5 @@ programming_language: r
 instructors: 
    - obscrivn@indiana.edu
    -  majdavis@iu.edu
-description: This is the second day of the RBootcamp. In this session, you will master data manipulation. Make sure you study the lecture and then dive into these hands-on activities using DataCamp. Allow yourself 2 hours to complete lectures and practice. For practice, we have modified some materials from https://www.datacamp.com/courses/free-introduction-to-r and http://www.cookbook-r.com/.
+description: This is the second day of the RBootcamp. In this session, you will master data manipulation. Make sure you study the lecture and then dive into these hands-on activities using DataCamp. Allow yourself 2 hours to complete lectures and practice. You can also review some materials from  http://www.cookbook-r.com/.
 #from: "r-base-prod:19"

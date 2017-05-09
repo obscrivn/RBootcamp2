@@ -3,9 +3,16 @@ title       : Chapter 1
 description : Data Frames
 
 --- type:NormalExercise xp:50 skills:1 key:3c1cd8a7c3
-## Introduction
+## Data frame definition
+* **Data frame** stores data tables
+* It contains vectors of equal length
+* ` data.frame() ` is a function to create a data frame
+
 
 *** =instructions
+-In the code, you have an example how to create a data frame with two columns
+-Add another vector with the values **5,6,7**
+-Create a data frame with d1, d2 and d3.
 
 
 *** =hint
@@ -18,18 +25,37 @@ description : Data Frames
 
 *** =sample_code
 ```{r}
+d1 <- c(1,2,3)
+d2 <- c(3,4,5)
+dataframe1 <- data.frame(d1,d2)
+
+#create a numeric vector
+d3 <- 
+
+#create a data frame
+dataframe2 
 
 ```
 
 *** =solution
 ```{r}
+d1 <- c(1,2,3)
+d2 <- c(3,4,5)
+dataframe1 <- data.frame(d1,d2)
+
+#create a numeric vector
+d3 <- c(5,6,7)
+
+#create a data frame
+dataframe2 <- data.frame(d1,d2,d3)
 
 ```
 
 *** =sct
 ```{r}
-#test_output_contains("8", incorrect_msg = "Make sure to add `3 + 5` on a new line. Do not start the line with a `#`, otherwise your R code is not executed!")
-#success_msg("Awesome! See how the console shows the result of the R code you submitted? Now that you're familiar with the interface, let's get down to R business!")
+test_object(("d3", incorrect_msg = "Make sure you use c()")
+test_object(("dataframe2", incorrect_msg = "Make sure you use data.frame")
+success_msg("Great!")
 ```
 
 --- type:MultipleChoiceExercise xp:50 skills:1 key:14288e1b24
