@@ -87,7 +87,7 @@ success_msg("Great!")
 *** =sample_code
 ```{r}
 # Load dataset
-mydata <- data(mtcars)
+data(mtcars)
 
 # The value of cell in the row 3 and column 2
 cell <- 
