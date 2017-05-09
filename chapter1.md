@@ -140,7 +140,9 @@ test_output_contains("mtcars[,2]", incorrect_msg = "try again")
 test_output_contains("mtcars[,\"mpg\"]", incorrect_msg = "try again")
 success_msg("Great!")
 ```
---- type:MultipleChoiceExercise xp:50 skills:1 key:14288e1b24
+--- type:MultipleChoiceExercise xp:50 skills:1 key:8f5314f41c
+
+## Useful Data Frame Functions Quiz
 Select the correct answer to represent the following tasks:
 1. calculate the first 6 row
 2. calculate the number of columns
