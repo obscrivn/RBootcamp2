@@ -113,7 +113,7 @@ data(mtcars)
 cell <- 4
 
 # Extract the last 6 rows
-mydata[3, 2]
+mtcars[3, 2]
 
 #Extract the entire 1st row
 #mydata[1,]
