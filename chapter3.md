@@ -12,9 +12,10 @@ description : Importing Data
 
 *** =instructions
 - You will import the csv file from the url
-- Run summary of the dataset movie_metadata
+- Run summary of the dataset **movie_data**
 - Attach your dataframe
-- Create a dataframe with movie budget over $30,000,000
+- Create a dataframe **movie.data2** with movie budget over $30,000,000
+- Examine the first 6 rows of movie.data2 (remember ther is a specific function that does that)
 
 *** =hint
 
@@ -41,6 +42,7 @@ movie.data <-
 movie.data2 <- 
 
 
+#Examine the first 6 rows of movie.data2
 
 ```
 
@@ -60,6 +62,9 @@ attach(movie.data)
 
 #Create a dataframe from movie.data with only movies with budgets over $30,000,000
 movie.data2 <- movie.data[budget>30000000, ]
+
+# Examine the first 6 rows of movie.data2
+head(movie.data2)
 
 ```
 
