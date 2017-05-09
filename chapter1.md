@@ -60,7 +60,7 @@ test_object("dataframe2", incorrect_msg = "Make sure you use data.frame")
 success_msg("Great!")
 ```
 --- type:NormalExercise xp:150 skills:1 key:d4d5230313
-## Row and Columns
+## Rows and Columns
 - To retrieve data from the rows and columns, you need to use `[ ]`
 - ` [1,2] ` has two coordinates: the first is a **row**, the second is a **column** - ` [ row1, column2 ] `
 - ` [1,] ` for the entire row, the second coordinate is empty
