@@ -15,7 +15,7 @@ description : Importing Data
 - Run summary of the dataset **movie_data**
 - Attach your dataframe
 - Create a dataframe **movie.data2** with movie budget over $30,000,000
-- Examine the first 6 rows of movie.data2 (remember ther is a specific function that does that)
+- Examine the first 6 rows of movie.data2 (remember there is a specific function that does that)
 
 *** =hint
 
