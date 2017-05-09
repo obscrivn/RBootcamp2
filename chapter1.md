@@ -121,7 +121,7 @@ mydata[1,]
 mydata[,2]
 
 # Extract cell from row 2 and column 3
-mydata[2,3]
+mydata[2,2]
 ```
 
 *** =sct
