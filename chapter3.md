@@ -12,8 +12,8 @@ description : Importing Data
 
 *** =instructions
 - You will import the csv file from the url
-- Run summary of the dataset **movie_data**
-- Attach your dataframe
+- Run summary of the dataset **movie.data**
+- Attach your dataframe ` attach(movie.data) `
 - Create a dataframe **movie.data2** with movie budget over $30,000,000
 - Examine the first 6 rows of movie.data2 (remember there is a specific function that does that)
 
@@ -71,8 +71,8 @@ head(movie.data2)
 ```{r}
 test_object("movie.data", incorrect_msg = "Try again1")
 test_output_contains("summary(movie.data)", incorrect_msg = "Try again2")
-test_output_contains("attach(movie.data)", incorrect_msg = "Try again3")
-test_object("movie.data2", incorrect_msg = "Try again4")
-test_output_contains("head(movie.data2)", incorrect_msg = "Try again5")
+#test_output_contains("attach(movie.data)", incorrect_msg = "Try again3")
+test_object("movie.data2", incorrect_msg = "Try again3")
+test_output_contains("head(movie.data2)", incorrect_msg = "Try again4")
 success_msg("Great! You are done! Feel free to work on your own data!")
 ```
