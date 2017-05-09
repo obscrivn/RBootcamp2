@@ -74,7 +74,7 @@ mydata[(cyl > 4 & disp < 400),]
 ```{r}
 test_object("mydata", incorrect_msg = "Try again")
 test_output_contains("summary(mydata)", incorrect_msg = "Try again")
-test_output_contains("mydata[\"cyl\" > 4]", incorrect_msg = "remember the correct column name and use a greater sign")
+test_output_contains("mydata[cyl > 4,]", incorrect_msg = "remember the correct column name and use a greater sign")
 test_output_contains("mydata[(cyl > 4 & disp < 400),]", incorrect_msg = "remember the correct column name and use amper sign")
 success_msg("Awesome!")
 ```
