@@ -67,9 +67,11 @@ success_msg("Great!")
 - ` [, 1] ` for the entire column, the first coordinate is empty
  
 *** =instructions
-- You have a dataset **mtcars** (data(mtcars) function import the built-in data)
-- Use ` head() ` function to access the first 6 rows
-- Use ` tail() ` function to access to last 6 rows
+- You will import a built-in dataset **mtcars**
+- In the **console** type  data(mtcars)
+- Type ` head(mtcars) ` access the first 6 rows
+- What is the value of the cell in the row # 3 and the column # 2? Type it in your script.
+- Extract the same value now using ` [ ] `
 - Extract the entire first row (remember to use ` [ ] `)
 - Extract the entire second column
 - Extract the cell from the second row and third column
@@ -87,8 +89,8 @@ success_msg("Great!")
 # Load dataset
 mydata <- data(mtcars)
 
-# Extract the first 6 rows
-
+# The value of cell in the row 3 and column 2
+cell <- 
 
 # Extract the last 6 rows
 
@@ -101,7 +103,6 @@ mydata <- data(mtcars)
 
 # Extract cell from row 2 and column 3
 
-
 ```
 *** =solution
 ```{r}
@@ -109,10 +110,10 @@ mydata <- data(mtcars)
 mydata <- data(mtcars)
 
 # Extract the first 6 rows
-head(mydata)
+cell <- 4
 
 # Extract the last 6 rows
-tail(mydata)
+mydata[3,2]
 
 #Extract the entire 1st row
 #mydata[1,]
@@ -126,11 +127,11 @@ tail(mydata)
 
 *** =sct
 ```{r}
-test_output_contains("head(mydata)", incorrect_msg = "try again")
-test_output_contains("tail(mydata)", incorrect_msg = "try again")
-test_output_contains("mydata[1,]", incorrect_msg = "try again")
-test_output_contains("mydata[,2]", incorrect_msg = "try again")
-test_output_contains("mydata[2,3]", incorrect_msg = "try again")
+test_object("cell", incorrect_msg = "try again")
+test_output_contains("mydata[3,2]", incorrect_msg = "try again")
+#test_output_contains("mydata[1,]", incorrect_msg = "try again")
+#test_output_contains("mydata[,2]", incorrect_msg = "try again")
+#test_output_contains("mydata[2,3]", incorrect_msg = "try again")
 success_msg("Great!")
 ```
 --- type:MultipleChoiceExercise xp:50 skills:1 key:14288e1b24
