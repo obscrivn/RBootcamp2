@@ -107,13 +107,13 @@ cell <-
 *** =solution
 ```{r}
 # Load dataset
-mydata <- data(mtcars)
+data(mtcars)
 
 # The value of cell in the row 3 and column 2
 cell <- 4
 
 # Extract the last 6 rows
-#mydata[3, 2]
+mydata[3, 2]
 
 #Extract the entire 1st row
 #mydata[1,]
