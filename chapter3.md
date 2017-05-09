@@ -11,7 +11,7 @@ description : Importing Data
 
 
 *** =instructions
--You will import the csv file from the url
+- You will import the csv file from the url
 - Run summary of the dataset movie_metadata
 - Attach the data frame
 - Create a dataframe with movie budget over $30,000,000
