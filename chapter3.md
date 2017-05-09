@@ -2,12 +2,13 @@
 title       : Chapter 3
 description : Importing Data
 --- type:NormalExercise xp:100 skills:1 key:169d8c0fe2
+## Imprt CSV from url
 
 - Function ` read.csv() ` import csv format files
 - Read about this function using help menu
 - By default the header is true, so you do not have to specify it
 - You can import your file as a local file or url
-- 
+
 
 *** =instructions
 -You will import the csv file from the url
@@ -39,8 +40,6 @@ movie.data <-
 #Create a dataframe from movie.data with only movies with budgets over $30,000,000
 movie.data2 <- 
 
-#Using the forward pipe operator (%>%) create a dataframe from movie.data that measure the budget in
-# millions of dollars and takes the first thirty entries.
 
 
 ```
