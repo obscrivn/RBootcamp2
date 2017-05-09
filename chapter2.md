@@ -19,7 +19,7 @@ description : Data Frame Modification
 - Use help function in the console to learn about ` summary() ` (remember to use question mark)
 - Apply this function to **mydata**
 - Retrieve only cylinders that are greater than 4
-- Retrieve cylinders that are greater 4 and disp is less than 400 (use ` & ` operator inside ` which() `)
+- Retrieve cylinders that are greater than 4 and disp is less than 400 (use ` & ` operator inside ` which() `)
 
 *** =hint
 the column name is "cyl"
@@ -50,7 +50,7 @@ mydata <- mtcars[]
 ```{r}
 data(mtcars)
 # Fill in the coordinates (colnames) inside the brackets
-mydata <- mtcars[c("cyl", "disp"),]
+mydata <- mtcars[, c("cyl", "disp")]
 
 #summary
 summary(mydata)
